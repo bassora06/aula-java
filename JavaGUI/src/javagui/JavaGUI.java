@@ -2,10 +2,13 @@
 package javagui;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 
 public class JavaGUI extends javax.swing.JFrame {
 
+    private String msg;
+    
     
     public JavaGUI() {
         initComponents();
@@ -90,17 +93,24 @@ public class JavaGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
         //JOptionPane.showMessageDialog(rootPane, "Voce digitou: " + tBox.getText());;
         int opc;
+        
+        msg = tBox.getText();  
+        
         opc = JOptionPane.showConfirmDialog(rootPane, "Voce confirma a operacao? ");
+     
         
         if(opc == 0){
-            JOptionPane.showMessageDialog(rootPane, "Continuar");
+            JOptionPane.showMessageDialog(rootPane, msg);
         }else if(opc == 1){
             JOptionPane.showMessageDialog(rootPane, "Não continuar");
         }else{
             JOptionPane.showMessageDialog(rootPane, "Cancelar");
         }
+        
+        msg = null;
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
