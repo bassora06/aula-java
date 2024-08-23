@@ -1,20 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package javagui;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author 0041432413002
- */
+
 public class JavaGUI extends javax.swing.JFrame {
 
-    /**
-     * Creates new form JavaGUI
-     */
+    
     public JavaGUI() {
         initComponents();
     }
@@ -99,8 +91,18 @@ public class JavaGUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //JOptionPane.showMessageDialog(rootPane, "Voce digitou: " + tBox.getText());;
+        int opc;
+        opc = JOptionPane.showConfirmDialog(rootPane, "Voce confirma a operacao? ");
         
-        JOptionPane.showConfirmDialog(rootPane, "Voce confirma a operacao? ");
+        JOptionPane.showMessageDialog(rootPane, "Voce digitou: " + opc);;
+        
+        if(opc == 0){
+            System.out.println("Continua");
+        }else if(opc == 1){
+            System.out.println("Não continuar");
+        }else{
+            System.out.println("Cancelar");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
