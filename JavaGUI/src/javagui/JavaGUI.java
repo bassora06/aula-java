@@ -94,14 +94,12 @@ public class JavaGUI extends javax.swing.JFrame {
         int opc;
         opc = JOptionPane.showConfirmDialog(rootPane, "Voce confirma a operacao? ");
         
-        JOptionPane.showMessageDialog(rootPane, "Voce digitou: " + opc);;
-        
         if(opc == 0){
-            System.out.println("Continua");
+            JOptionPane.showMessageDialog(rootPane, "Continuar");
         }else if(opc == 1){
-            System.out.println("Não continuar");
+            JOptionPane.showMessageDialog(rootPane, "Não continuar");
         }else{
-            System.out.println("Cancelar");
+            JOptionPane.showMessageDialog(rootPane, "Cancelar");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
