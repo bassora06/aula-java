@@ -14,7 +14,11 @@ public class JavaAplication3 {
         
         Carro c = new Carro();
         c.imprimir();
-        System.out.println("Qtde:"+c.quantidade(3));
+        System.out.println("Qtde:"+c.quantidade(3)+"\n");
+        
+        Moto m = new Moto();
+        m.imprimir();
+        System.out.println("Qtde da moto:"+m.quantidade(10));
         
     }
     
