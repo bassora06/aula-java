@@ -6,9 +6,9 @@ import javax.swing.JTextField;
 
 
 public class JavaGUI extends javax.swing.JFrame {
-
+ 
     private String msg;
-    private final int rodas = 4;
+    private final int rodas = 4; // final = constante
     
     
     public JavaGUI() {
