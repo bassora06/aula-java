@@ -9,4 +9,6 @@ public abstract class Veiculo {
     
     public abstract int quantidade(int qtde);
     
+    public abstract void mover();
+    
 }
