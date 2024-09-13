@@ -2,15 +2,7 @@
 package javaaplication3;
 
 
-public class Carro extends Veiculo{
-
-    @Override
-    public void imprimir(){
-        System.out.println("Teste");
-    }
+public class Carro extends Terrestres{
     
-    @Override
-    public int quantidade(int qtde){
-        return qtde;
-    }
+    
 }
