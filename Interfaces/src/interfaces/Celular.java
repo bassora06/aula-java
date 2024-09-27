@@ -1,7 +1,7 @@
 
 package interfaces;
 
-public class Celular extends DispositivosEletronicos implements GPS{
+public class Celular extends DispositivosEletronicos{
     
     public Celular(String modeloTela) {
         super(modeloTela);
@@ -14,7 +14,7 @@ public class Celular extends DispositivosEletronicos implements GPS{
 
     @Override
     public void navegar() {
-        System.out.println("Navegando");
+        System.out.println("Celular Navegando");
     }
     
 }

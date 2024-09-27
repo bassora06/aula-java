@@ -1,7 +1,7 @@
 
 package interfaces;
 
-public abstract class DispositivosEletronicos {
+public abstract class DispositivosEletronicos implements GPS{
     
     private String modeloTela;
 

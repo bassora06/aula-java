@@ -1,7 +1,7 @@
 
 package interfaces;
 
-public abstract class Veiculo{
+public abstract class Veiculo implements GPS{
     
     private int rodas;
     
