@@ -1,7 +1,7 @@
 
 package interfaces;
 
-public class Carro extends Veiculo{
+public class Carro extends Veiculo implements GPS{
     
     public Carro(int rodas) {
         super(rodas);
@@ -10,6 +10,11 @@ public class Carro extends Veiculo{
     @Override
     public void abastecer() {
         System.out.println("Abastecendo");
+    }
+
+    @Override
+    public void navegar() {
+        System.out.println("Navegando");
     }
     
 }
