@@ -21,5 +21,10 @@ public abstract class Veiculo implements GPS{
     
     public abstract void abastecer();
     
+    @Override
+    public void navegar(){
+        System.out.println("O veiculo navega");
+    };
+    
     
 }

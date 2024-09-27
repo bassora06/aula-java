@@ -17,5 +17,9 @@ public class Carro extends Veiculo{
         System.out.println("Carro Navegando");
     }
     
+    public void imprimir(){
+        super.navegar();
+    }
+    
     
 }

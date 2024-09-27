@@ -18,4 +18,8 @@ public abstract class DispositivosEletronicos implements GPS{
     }
     
     public abstract void carregar();
+    
+    public void navegar(){
+        System.out.println("Dispositivo navegando");
+    }
 }

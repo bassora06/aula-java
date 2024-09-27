@@ -14,7 +14,7 @@ public class Celular extends DispositivosEletronicos{
 
     @Override
     public void navegar() {
-        System.out.println("Celular Navegando");
+        super.navegar();
     }
     
 }
